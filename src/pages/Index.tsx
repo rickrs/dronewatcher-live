@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { useDrones } from '@/hooks/useDrones';
 import DroneGrid from '@/components/DroneGrid';
 import Header from '@/components/Header';
-import { toast } from '@/components/ui/sonner';
+import { toast } from 'sonner';
 
 const Index: React.FC = () => {
   const { drones, loading, error, addDrone, removeDrone } = useDrones(4);
